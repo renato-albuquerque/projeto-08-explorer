@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-header: hsl(218, 17%, 62%);
+    --bg-h1: hsl(275, 18%, 79%);
+    --bg-main: hsl(233, 100%, 97%);
+    --bg-h2: hsl(312, 91%, 96%);
+
+    --ff-h1h2: 'Staatliches', cursive;
+    --ff-p: 'Palanquin', sans-serif;
+
+    font-size: 62.5%;
+}
+
+.page {
+    max-width: 38.4rem;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    background: var(--bg-header);
+    padding-top: 3.2rem;
+    padding-bottom: 2.9rem;
+}
+
+header h1 {
+    background: var(--bg-h1);
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-top: 3.2rem;
+   
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.0rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+    font-family: var(--ff-h1h2);
+    color: #FFFFFF;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+main {
+    background: var(--bg-main);
+    padding-bottom: 6.0rem;    
+}
+
+main p {
+    font-family: var(--ff-p);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 2.0rem; /* Figma = 1.5rem. Adaptado para 2rem. */
+    align-items: center;
+    text-align: center;
+    color: #23053A;
+    background: var(--bg-main);
+    padding-top: 1.4rem;
+    padding-bottom: 6.3rem; 
+    width: 30.5rem;
+    margin: auto; /* Para centralizar a caixa p. */
+}
+
+.allcards {
+    display: grid;
+    gap: 3.2rem;
+    text-align: center;
+}
+
+.allcards .cards {
+    position: relative;
+    width: fit-content; /* Para ter a largura do conteúdo. */
+    margin: 0 auto; /* Alinhar. */
+}
+
+.allcards .cards img {
+    animation: downtop 700ms;
+    /* object-fit: cover; */
+}
+
+.allcards .cards h2 {
+    position: absolute; /* Posição relativa a imagem, class cards. */
+    top: 1.6rem;
+    right: 1.6rem;
+    
+    background: var(--bg-h2);
+    border-radius: 2.0rem;
+    font-family: var(--ff-h1h2);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+    color: #4A4E69;
+    padding: 1px 2.4rem;
+
+    animation: topdown 700ms 350ms backwards;
+}
+
+@keyframes downtop { /* Cards */
+    0% {
+        transform: translateY(15px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes topdown { /* Tipos de sorvete, h2. */
+    0% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
