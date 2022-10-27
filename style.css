@@ -12,6 +12,8 @@
 
     --ff-h1h2: 'Staatliches', cursive;
     --ff-p: 'Palanquin', sans-serif;
+    --ff-p-desktop: 'Roboto', sans-serif;
+    --ff-footer-desktop: 'Open Sans', sans-serif;
 
     font-size: 62.5%;
 }
@@ -102,6 +104,14 @@ main p {
     animation: topdown 700ms 350ms backwards;
 }
 
+#images5-6 {
+    display: none; /* Imagens 5 e 6 apenas visíveis na versão desktop. */
+}
+
+footer p {
+    display: none; /* Footer apenas visível na versão desktop. */
+}
+
 @keyframes downtop { /* Cards */
     0% {
         transform: translateY(15px);
@@ -122,3 +132,132 @@ main p {
     }
 }
 
+@media (min-width: 1024px) {
+    body {
+        background: var(--bg-main);
+        width: 100vw;
+    }
+
+    .page {
+        max-width: 37.7rem;
+        left: 0;
+        top: 0;
+        margin: 0;
+        display: flex;    
+        
+    }    
+
+    header {
+        display: flex;
+        flex-direction: column;
+        
+               
+      }
+
+    header img {
+        width: 21.5rem;
+        height: 16.7rem; 
+        margin: 0 auto;
+    }
+
+    header h1 {
+        text-align: center;
+      }
+
+    header::after {
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam aliquet, pharetra est in, sagittis lorem.elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam aliquet, pharetra est in, sagittis lorem.";
+        
+     /*    max-width: 27.5rem;
+        height: 26.2rem; */
+        font-family: var(--ff-p-desktop)
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.4rem;
+        line-height: 2.0rem;
+        color: #FFFFFF;
+        
+
+        margin: 0 5.4rem;
+
+        padding-top: 3.2rem;
+        padding-bottom: 12.5rem;
+    }
+
+    main p {
+        display: none;
+    }
+
+    .allcards {
+        display: grid;
+        
+        justify-content: space-around;
+        grid-template-areas:
+            "A B C"
+            "D B F"
+            "D E F";
+    
+        padding: 0;
+        gap: 3.2rem; 
+        
+    }
+
+    .allcards div:nth-child(1) {
+        grid-area: A;
+    }
+    
+    .allcards div:nth-child(2) {
+        grid-area: B;
+    }
+    
+    .allcards div:nth-child(3) {
+        grid-area: C;
+    }
+    
+    .allcards div:nth-child(4) {
+        grid-area: D;
+    }
+    
+    .allcards div:nth-child(5) {
+        grid-area: E;
+    }
+    
+    .allcards div:nth-child(6) {
+        grid-area: F;
+    }
+    
+    #images5-6 {
+        display: block;
+    }
+
+    .wrapper-main-footer {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        margin-top: 6.4rem;
+        background: var(--bg-main);
+        margin-left: 6rem; /* Adaptado. Figma = 9.8rem */
+        margin-right: 6rem; /* Adaptado. Figma = 9.8rem */
+        
+    }
+
+    footer p {
+        display: block;
+        font-family: var(--ff-p-desktop);
+        font-style: normal;
+        font-weight: 40.0rem;
+        font-size: 1.4rem;
+        line-height: 2.8rem;
+        text-align: center;
+        color: #4A4E69;
+        mix-blend-mode: normal;
+        background: var(--bg-main);
+
+        margin-bottom: 4.6rem;
+        
+    }
+
+    a {
+        text-decoration: none;
+        color: #4A4E69;
+    }
+}
