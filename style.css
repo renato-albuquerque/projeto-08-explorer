@@ -135,24 +135,20 @@ footer p {
 @media (min-width: 1024px) {
     body {
         background: var(--bg-main);
-        width: 100vw;
     }
 
     .page {
-        max-width: 37.7rem;
+        width: 128.0rem;
         left: 0;
         top: 0;
         margin: 0;
         display: flex;    
-        
-    }    
+    }   
 
-    header {
-        display: flex;
-        flex-direction: column;
-        
-               
-      }
+    /* header {
+        padding-left: 8.1rem;
+        padding-right: 8.1rem;
+    } */
 
     header img {
         width: 21.5rem;
@@ -162,25 +158,23 @@ footer p {
 
     header h1 {
         text-align: center;
+        margin-top: 5rem;
+        margin-bottom: 5rem; /* adaptado, 3.2rem */
+        width: 37.7rem;
       }
 
     header::after {
         content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam aliquet, pharetra est in, sagittis lorem.elit. Donec a rhoncus leo. Donec at scelerisque magna. Nullam vitae neque sit amet erat dignissim cursus ac ac lectus. Aliquam erat volutpat. Praesent at quam aliquet, pharetra est in, sagittis lorem.";
         
-     /*    max-width: 27.5rem;
-        height: 26.2rem; */
         font-family: var(--ff-p-desktop)
         font-style: normal;
         font-weight: 400;
         font-size: 2.4rem;
         line-height: 2.0rem;
         color: #FFFFFF;
-        
 
-        margin: 0 5.4rem;
-
-        padding-top: 3.2rem;
-        padding-bottom: 12.5rem;
+        display: block;
+        padding: 0 6rem;
     }
 
     main p {
@@ -188,8 +182,7 @@ footer p {
     }
 
     .allcards {
-        display: grid;
-        
+        display: grid;      
         justify-content: space-around;
         grid-template-areas:
             "A B C"
@@ -198,7 +191,6 @@ footer p {
     
         padding: 0;
         gap: 3.2rem; 
-        
     }
 
     .allcards div:nth-child(1) {
@@ -229,6 +221,22 @@ footer p {
         display: block;
     }
 
+    .cards img {
+        transition: transform 200ms;
+    }
+
+    .cards img:hover {
+        transform: rotate(15deg);
+    }
+
+    .cards h2 {
+        transition: transform 200ms;
+    }
+
+    .cards h2:hover {
+        transform: scale(1.2);
+    }
+
     .wrapper-main-footer {
         display: flex;
         flex-direction: column;
@@ -236,8 +244,7 @@ footer p {
         margin-top: 6.4rem;
         background: var(--bg-main);
         margin-left: 6rem; /* Adaptado. Figma = 9.8rem */
-        margin-right: 6rem; /* Adaptado. Figma = 9.8rem */
-        
+        margin-right: 6rem; /* Adaptado. Figma = 9.8rem */ 
     }
 
     footer p {
@@ -252,12 +259,15 @@ footer p {
         mix-blend-mode: normal;
         background: var(--bg-main);
 
-        margin-bottom: 4.6rem;
-        
+        margin-bottom: 4.6rem;    
     }
 
     a {
         text-decoration: none;
         color: #4A4E69;
+    }
+
+    a:hover {
+        color: var(--bg-header);
     }
 }

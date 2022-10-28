@@ -2,14 +2,15 @@
 
 Projeto desenvolvido durante o Stage 03 do Programa Explorer, em Out/22.
 
-## Projeto Space Cream - Mobile.
-
 🔗 [Clique aqui para acessar](https://renato-albuquerque.github.io/projeto-08-explorer/)
+
+## Projeto Space Cream - Mobile.
 
 ![screenshot](images/screenshot1.png)
 
 ## Projeto Space Cream - Desktop.
-Em desenvolvimento.
+
+![screenshot](images/screenshot2.png)
 
 ## Tecnologias
 
