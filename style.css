@@ -145,11 +145,6 @@ footer p {
         display: flex;    
     }   
 
-    /* header {
-        padding-left: 8.1rem;
-        padding-right: 8.1rem;
-    } */
-
     header img {
         width: 21.5rem;
         height: 16.7rem; 
@@ -158,8 +153,8 @@ footer p {
 
     header h1 {
         text-align: center;
-        margin-top: 5rem;
-        margin-bottom: 5rem; /* adaptado, 3.2rem */
+        margin-top: 5rem; /* Adaptado. Figma = 3.2rem. */
+        margin-bottom: 5rem; /* Adaptado. Figma = 3.2rem. */
         width: 37.7rem;
       }
 
