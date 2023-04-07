@@ -1,7 +1,5 @@
 # SPACE CREAM - Project 08
 
-Projeto 08 - Programa Explorer, Turma 06, Rocketseat
-
 Project developed during the Rocketseat Course, Explorer Program, Class 06, Stage 03. In Oct/22.
 Responsive website. Mobile and Desktop versions.
 
