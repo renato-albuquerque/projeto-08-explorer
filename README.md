@@ -1,24 +1,26 @@
-# Projeto 08 - Programa Explorer, Turma 06, Rocketseat
+# SPACE CREAM - Project 08
 
-Projeto desenvolvido durante o Stage 03 do Programa Explorer, em Out/22.
-Site responsivo, versões Mobile e Desktop.
+Projeto 08 - Programa Explorer, Turma 06, Rocketseat
 
-🔗 [Clique aqui para acessar](https://renato-albuquerque.github.io/projeto-08-explorer/)
+Project developed during the Rocketseat Course, Explorer Program, Class 06, Stage 03. In Oct/22.
+Responsive website. Mobile and Desktop versions.
 
-## Projeto Space Cream - Mobile Version.
+🔗 [Click here to access](https://renato-albuquerque.github.io/projeto-08-explorer/)
+
+## Space Cream Project - Mobile Version.
 
 ![screenshot](images/screenshot1.png)
 
-## Projeto Space Cream - Desktop Version.
+## Space Cream Project - Desktop Version.
 
 ![screenshot](images/screenshot2.png)
 
-## Tecnologias
+## Technologies
 
 - HTML
 - CSS
-- Git e Github
+- Git and Github
 
-## Contato
+## Contact
 
 🔗 [Linkedin](https://www.linkedin.com/in/renato-malbuquerque/)
